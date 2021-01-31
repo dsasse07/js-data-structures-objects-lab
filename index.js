@@ -29,31 +29,31 @@ function destructivelyDeleteFromDriverByKey(driver, key) {
 
 
 
-const a = [1, [2, 3], 4, 5 ]
+// const a = [1, [2, 3], 4, 5 ]
 
-function deep(array, criteriaFn) {
+// function deep(array, criteriaFn) {
   
-  let next = array
-  let current = next.shift()
+//   let next = array
+//   let current = next.shift()
   
 
   
-  while (current || current === 0) {
-    // debugger 
-    if (criteriaFn(current)) {
-      console.log(`hello ${current}`)
-      return current
-    }
+//   while (current || current === 0) {
+//     // debugger 
+//     if (criteriaFn(current)) {
+//       console.log(`hello ${current}`)
+//       return current
+//     }
     
-    if (Array.isArray(current)) {
-      let result = deep(current, criteriaFn)
-      if (result) {
-        return result
-      }
-    }
+//     if (Array.isArray(current)) {
+//       let result = deep(current, criteriaFn)
+//       if (result) {
+//         return result
+//       }
+//     }
 
-    current = next.shift()
-  }
+//     current = next.shift()
+//   }
 
-  return null
-}
+//   return null
+// }
